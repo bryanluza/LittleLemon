@@ -1,0 +1,22 @@
+meta {
+  name: booking
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://127.0.0.1:8000/restaurant/booking/table
+  body: none
+  auth: apikey
+}
+
+auth:apikey {
+  key: Authorization
+  value: Token 44d6a1aa71d4f13d9545fcaae9465fb3bf32a0cf
+  placement: header
+}
+
+body:form-urlencoded {
+  ~username: testuser
+  ~password: Employee@123!
+}

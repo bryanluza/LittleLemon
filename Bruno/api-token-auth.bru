@@ -1,0 +1,16 @@
+meta {
+  name: api-token-auth
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://127.0.0.1:8000/restaurant/api-token-auth/
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  username: testuser
+  password: Employee@123!
+}
